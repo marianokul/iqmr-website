@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Institute for Quantitative Macroeconomic Research">
+  <title>IQMR | Institute for Quantitative Macroeconomic Research</title>
+  <style>
+    :root {
+      --navy: #172b42;
+      --ink: #263342;
+      --muted: #65717c;
+      --paper: #faf9f6;
+      --line: #e3e5e6;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.65;
+    }
+    header {
+      background: white;
+      border-bottom: 1px solid var(--line);
+      padding: 22px 7%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      color: var(--navy);
+      text-decoration: none;
+    }
+    .logo { font-size: 34px; letter-spacing: -2px; }
+    .brand-name {
+      border-left: 1px solid #b9c0c7;
+      padding-left: 18px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+    nav { display: flex; gap: 25px; flex-wrap: wrap; }
+    nav a, .text-link {
+      color: var(--navy);
+      text-decoration: none;
+    }
+    nav a:hover, .text-link:hover { text-decoration: underline; }
+    .hero {
+      padding: 110px 7%;
+      background: linear-gradient(120deg, #f0f2f2, #ffffff);
+    }
+    .hero-content { max-width: 800px; }
+    .eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    h1, h2, h3 { color: var(--navy); font-weight: normal; }
+    h1 {
+      font-size: clamp(40px, 6vw, 66px);
+      line-height: 1.13;
+      margin: 25px 0;
+      letter-spacing: -1.5px;
+    }
+    .hero p { font-size: 20px; max-width: 680px; }
+    .button {
+      display: inline-block;
+      margin-top: 22px;
+      padding: 12px 26px;
+      background: var(--navy);
+      color: white;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    .button:hover { background: #344d68; }
+    section { padding: 75px 7%; }
+    .section-heading {
+      font-size: 34px;
+      margin: 12px 0 30px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 35px;
+    }
+    .panel {
+      padding-top: 20px;
+      border-top: 2px solid var(--navy);
+    }
+    .panel h3 { font-size: 23px; line-height: 1.3; }
+    .panel p { color: var(--muted); }
+    .alternate { background: #f0f2f2; }
+    .narrow { max-width: 850px; }
+    footer {
+      background: var(--navy);
+      color: #e6eaf0;
+      padding: 40px 7%;
+      font-size: 14px;
+    }
+    footer p { margin: 5px 0; }
+    @media (max-width: 700px) {
+      header { align-items: flex-start; }
+      nav { gap: 15px; font-size: 14px; }
+      .hero { padding-top: 70px; padding-bottom: 70px; }
+      .grid { grid-template-columns: 1fr; }
+      section { padding-top: 55px; padding-bottom: 55px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#home">
+    <span class="logo">IQMR</span>
+    <span class="brand-name">
+      Institute for Quantitative<br>Macroeconomic Research
+    </span>
+  </a>
+  <nav aria-label="Main navigation">
+    <a href="#home">Home</a>
+    <a href="#research">Research</a>
+    <a href="#people">People</a>
+    <a href="#events">Events</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero" id="home">
+    <div class="hero-content">
+      <div class="eyebrow">Research · Analysis · Ideas</div>
+      <h1>Understanding structural change in the modern economy.</h1>
+      <p>
+        The Institute for Quantitative Macroeconomic Research
+        (IQMR) is an independent research initiative dedicated
+        to advancing our understanding of macroeconomic dynamics,
+        structural transformation, and economic policy through
+        rigorous quantitative research.
+      </p>
+      <a class="button" href="#research">Explore our research →</a>
+    </div>
+  </div>
+
+  <section id="research">
+    <div class="eyebrow">What we study</div>
+    <h2 class="section-heading">Research</h2>
+    <div class="grid">
+      <article class="panel">
+        <h3>Structural Change</h3>
+        <p>
+          Understanding how economies adjust to technological,
+          demographic, and institutional transformations.
+        </p>
+      </article>
+      <article class="panel">
+        <h3>Macroeconomic Policy</h3>
+        <p>
+          Quantitative analysis of monetary and fiscal policy,
+          business cycles, and macroeconomic stability.
+        </p>
+      </article>
+      <article class="panel">
+        <h3>AI and the Macroeconomy</h3>
+        <p>
+          Exploring the implications of artificial intelligence
+          for productivity, investment, economic dynamics,
+          and public policy.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="alternate" id="people">
+    <div class="eyebrow">Our network</div>
+    <h2 class="section-heading">People</h2>
+    <div class="narrow">
+      <h3>Mariano Kulish</h3>
+      <p>Founder · Professor of Macroeconomics</p>
+      <p>
+        IQMR aims to bring together researchers working on
+        quantitative macroeconomics and related fields,
+        fostering collaboration across institutions and countries.
+      </p>
+    </div>
+  </section>
+
+  <section id="events">
+    <div class="eyebrow">Exchange and learning</div>
+    <h2 class="section-heading">Events & Education</h2>
+    <div class="narrow">
+      <p>
+        IQMR envisages focused research workshops, seminars,
+        and short courses that bring together academics,
+        policymakers, and students.
+      </p>
+      <p>Details of future activities will be announced here.</p>
+    </div>
+  </section>
+
+  <section class="alternate" id="about">
+    <div class="eyebrow">Our purpose</div>
+    <h2 class="section-heading">About IQMR</h2>
+    <div class="narrow">
+      <p>
+        IQMR is an independent research initiative committed
+        to rigorous economic inquiry, intellectual openness,
+        and collaboration.
+      </p>
+      <p>
+        Its purpose is to contribute to a deeper understanding
+        of the macroeconomy and to informed economic policy
+        and public debate.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p><strong>IQMR</strong></p>
+  <p>Institute for Quantitative Macroeconomic Research</p>
+  <p>Independent research initiative · Sydney, Australia</p>
+  <p>© 2026 IQMR</p>
+</footer>
+
+</body>
+</html>
